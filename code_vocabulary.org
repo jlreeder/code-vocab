@@ -5,3 +5,17 @@
 array = [1, 1, 39]
 array.reduce(:+)
 #+END_SRC
+* Seek sum in array
+See if any two items in array add up to a given sum
+** Ruby
+#+BEGIN_SRC ruby
+# Returns true if any two items in array sum to zero
+def zero_sum?(array)
+  array.each_with_index do |first_num, first_idx|
+    array.each_with_index do |sec_num, sec_idx|
+      return true if (first_num + sec_num).zero? && first_idx != sec_idx
+    end
+  end
+  false
+end
+#+END_SRC
