@@ -1,0 +1,4 @@
+#+TITLE: Code Vocabulary Readme
+Notes on the building blocks of code.
+
+I first started a similar collection using Anki. Though I still find Anki useful as a review tool, it is not ideal for typing in code snippets. A plain text format would also be easier to track and build upon. So I've decided to start this reincarnation.

@@ -1,0 +1,7 @@
+#+TITLE: Code Vocabulary
+* Sum an array
+** Ruby
+#+BEGIN_SRC ruby
+array = [1, 1, 39]
+array.reduce(:+)
+#+END_SRC
