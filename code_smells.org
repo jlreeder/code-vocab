@@ -1,5 +1,8 @@
 #+TITLE: Code Smells
-These are reasons to refactor code. They indicate not that there /is/ a problem, but that there /may be/ a problem. They are also really good fodder for git commit messages (since they explain reasoning behind changes).
+These are reasons to refactor code. They indicate not that there /is/ a
+problem, but that there /may be/ a problem. They are also really good
+fodder for git commit messages (since they explain reasoning behind
+changes).
 * Duplicated code
 - DRY
 * Long methods
