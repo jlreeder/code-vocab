@@ -1,0 +1,8 @@
+#+TITLE: Git Vocabulary
+/Useful phrases for fluent git interaction/
+* Push all branches
+~git push --all~
+* Remove remote
+~git remote rm origin~
+* Choose which changes to stage
+~git add --patch~
