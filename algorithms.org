@@ -1,6 +1,11 @@
 #+TITLE: Algorithms
 /Notes to remember important algorithms/
 * Quick sort
+- Problem
+  - Given an array, return a sorted version of that array
+- Args
+  - Array
+  - Default Proc = compare el to target (< | > | ==)
 - Base case
   - self if length <= 1
 - Vars
