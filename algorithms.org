@@ -1,0 +1,12 @@
+#+TITLE: Algorithms
+/Notes to remember important algorithms/
+* Quick sort
+- Base case
+  - self if length <= 1
+- Vars
+  - pivot = first element
+  - left = less than pivot
+  - right = more than pivot
+- Recursion
+  - left.quick_sort + pivot + right.quick_sort
+* Binary search
