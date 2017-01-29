@@ -1,4 +1,12 @@
-#+TITLE: Code Vocabulary Readme
-Notes on the building blocks of code.
+#+TITLE: Code Vocabulary
+/Notes on the building blocks of code/
 
-I first started a similar collection using Anki. Though I still find Anki useful as a review tool, it is not ideal for typing in code snippets. A plain text format would also be easier to track and build upon. So I've decided to start this reincarnation.
+This repository contains my personal notes on topics related to writing code that I find interested or important. It is a working document, and it most certainly contains errors.
+
+* Contents
+- [[file:algorithms.org][Algorithms]]
+- [[file:bash_vocab.org][Bash Vocab]]
+- [[file:code_smells.org][Code Smells]]
+- [[file:emacs_vocab.org][Emacs Vocab]]
+- [[file:git_vocab.org][Git Vocab]]
+- [[file:ruby_vocab.org][Ruby Vocab]]
