@@ -1,0 +1,20 @@
+#+TITLE: Emacs Vocabulary
+* Fill paragraph
+- ~m-q~
+- Justifies to line width
+* Fill column indicator
+- Shows max char gutter
+* Describe char
+* Helm resume
+* Eldoc
+- ~C-c C-f~
+- Eldoc gets Python help for whatever is under the point
+* Helm send results to buffer
+- Helm edit mode
+- ~C-c C-e~
+- Allows you to save and edit results
+* Insert only opening paren
+- ~C-q~ {symbol}
+- For example:
+  - ~C-q (~
+  - Will only insert the opening paren

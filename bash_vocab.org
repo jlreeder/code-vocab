@@ -1,0 +1,9 @@
+#+TITLE: Bash Vocabulary
+* Get Time and Date
+#+BEGIN_SRC bash
+date
+#+END_SRC
+* Get Battery Life
+#+BEGIN_SRC bash
+pmset -g batt
+#+END_SRC
