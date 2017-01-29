@@ -6,3 +6,5 @@
 ~git remote rm origin~
 * Choose which changes to stage
 ~git add --patch~
+* List remote repositories
+~git remote -v~
