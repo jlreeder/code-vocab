@@ -10,3 +10,22 @@
 - Recursion
   - left.quick_sort + pivot + right.quick_sort
 * Binary search
+- Args
+  - target
+- Base
+  - nil if empty
+- Vars
+  - midpoint
+  - left
+  - right (not including item at midpoint)
+- Recursion
+  - When item at midpoint < target
+    - Binary search the left side
+  - When item at midpoint == target
+    - Return midpoint
+  - When item at midpoint > target
+    - right_res = Binary search the right side
+    - If right_res is nil
+      - Return nil
+    - Else
+      - Add the index right_res returned to the midpoint + 1
