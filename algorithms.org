@@ -10,14 +10,18 @@
 - Recursion
   - left.quick_sort + pivot + right.quick_sort
 * Binary search
+- Problem
+  - Given a sorted array and a target, determine whether the array contains the target, and if so, at which index
 - Args
+  - Sorted array
   - target
+  - Default Proc = compare el to target (< | > | ==)
 - Base
-  - nil if empty
+  - nil if array is empty
 - Vars
   - midpoint
   - left
-  - right (not including item at midpoint)
+  - right (midpoint + 1)
 - Recursion
   - When item at midpoint < target
     - Binary search the left side
