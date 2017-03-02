@@ -1,40 +1,53 @@
 #+TITLE: Algorithms
 /Notes to remember important algorithms/
-* Quick sort
-- Problem
-  - Given an array, return a sorted version of that array
-- Args
-  - Array
-  - Default Proc = compare el to target (< | > | ==)
-- Base case
-  - self if length <= 1
-- Vars
-  - pivot = first element
-  - left = less than pivot
-  - right = more than pivot
-- Recursion
-  - left.quick_sort + pivot + right.quick_sort
-* Binary search
-- Problem
-  - Given a sorted array and a target, determine whether the array contains the target, and if so, at which index
-- Args
-  - Sorted array
-  - target
-  - Default Proc = compare el to target (< | > | ==)
-- Base
-  - nil if array is empty
-- Vars
-  - midpoint
-  - left
-  - right (midpoint + 1)
-- Recursion
-  - When item at midpoint < target
-    - Binary search the left side
-  - When item at midpoint == target
-    - Return midpoint
-  - When item at midpoint > target
-    - right_res = Binary search the right side
-    - If right_res is nil
-      - Return nil
-    - Else
-      - Add the index right_res returned to the midpoint + 1
+* Search
+** Binary search
+ - Problem
+   - Given a sorted array and a target, determine whether the array contains the target, and if so, at which index
+ - Args
+   - Sorted array
+   - target
+   - Default Proc = compare el to target (< | > | ==)
+ - Base
+   - nil if array is empty
+ - Vars
+   - midpoint
+   - left
+   - right (midpoint + 1)
+ - Recursion
+   - When item at midpoint < target
+     - Binary search the left side
+   - When item at midpoint == target
+     - Return midpoint
+   - When item at midpoint > target
+     - right_res = Binary search the right side
+     - If right_res is nil
+       - Return nil
+     - Else
+       - Add the index right_res returned to the midpoint + 1
+* Sort
+** Quick sort
+ - Problem
+   - Given an array, return a sorted version of that array
+ - Args
+   - Array
+   - Default Proc = compare el to target (< | > | ==)
+ - Base case
+   - self if length <= 1
+ - Vars
+   - pivot = first element
+   - left = less than pivot
+   - right = more than pivot
+ - Recursion
+   - left.quick_sort + pivot + right.quick_sort
+** Bubble sort
+- instantiate variable: ~is_sorted~ to false
+- start a while loop (until sorted)
+- loop through the array
+  - set ~is_sorted~ to true (temporarily)
+  - compare each element with the following element
+    - If they are out of order, switch them
+    - set ~is_sorted~ to false if a change was made
+- return the sorted array
+** Merge sort
+** Jumble sort
