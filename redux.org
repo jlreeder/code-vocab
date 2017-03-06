@@ -14,3 +14,71 @@
        - Action
      - They return
        - New state
+* Steps to Create
+** Create ~package.json~
+#+BEGIN_SRC bash
+npm init -y
+#+END_SRC
+** Install packages
+#+BEGIN_SRC bash
+npm install --save webpack react react-dom redux react-redux babel-core babel-loader babel-preset-react babel-preset-es2015 lodash webpack-dev-server
+#+END_SRC
+** Create ~webpack.config.js~
+#+BEGIN_SRC javascript
+var path = require('path');
+
+module.exports = {
+  // TODO: Update entry to reflect correct .jsx file
+  entry: './entry.jsx',
+  output: {
+    path: path.resolve(__dirname),
+    filename: 'bundle.js',
+  },
+  module: {
+    loaders: [
+      {
+        test: [/\.jsx?$/],
+        exclude: /(node_modules)/,
+        loader: 'babel-loader',
+        query: {
+          presets: ['es2015', 'react']
+        }
+      }
+    ]
+  },
+  devtool: 'source-map',
+  resolve: {
+    extensions: ['.js', '.jsx', '*']
+  }
+};
+#+END_SRC
+** Configure webpack dev server
+Add the following to ~package.json~:
+
+#+BEGIN_SRC javascript
+"scripts": {
+    "start": "webpack-dev-server --inline"
+  }
+#+END_SRC
+** Add index page
+- Make sure to include the bundle:
+  ~<script src="./bundle.js"></script>~
+- Make sure to include an entry point
+  ~<div id="content"> React will take over. </div>~
+** Add placeholder to entry file
+#+BEGIN_SRC javascript
+import React from "react";
+import ReactDOM from "react-dom";
+
+const App = () => (
+  <div className="app">
+    <h1>React is working</h1>
+  </div>
+);
+
+document.addEventListener('DOMContentLoaded', () => {
+  const root = document.getElementById('content');
+  ReactDOM.render(<App />, root);
+});
+#+END_SRC
+** Run ~npm start~
