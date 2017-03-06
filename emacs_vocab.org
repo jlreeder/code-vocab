@@ -18,3 +18,10 @@
 - For example:
   - ~C-q (~
   - Will only insert the opening paren
+* Good themes
+I like showing line numbers, but I do not like having the gutter be a different
+color from the main background. Those two preferences together mean that I don't
+like most of the Spacemacs themes. The following is a list of themes that /do/
+work for me:
+- omtose-darker
+- omtose-softer
