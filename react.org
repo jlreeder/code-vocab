@@ -1,0 +1,22 @@
+#+TITLE: React
+* Meta
+** Benefits
+- Elegant handling of rendering changes to the DOM
+  - Automatically re-renders components whenever their props or state change
+  - Only re-renders changed components
+- Simple assignment of handlers
+  - Pass them in as props to HTML elements (in JSX)
+** Alternatives
+- jQuery
+- Vanilla Javascript
+** Remember to
+- Only return one HTML element (wrap everything in a ~<div>~)
+- Bind all handlers to the context of ~this~
+* Components
+- All React components have a render method, which returns HTML
+** Functional
+- Has only an (implicit) render method
+** Standard
+- Has state (props)
+- Has (explicit) render method
+- May have other methods

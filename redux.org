@@ -1,0 +1,16 @@
+#+TITLE: Redux
+* Meta
+- Node package that implements Flux
+* Principles
+1. Single source of truth
+   - There is one single store (called the "state tree")
+2. State is read-only
+   - To change it, dispatch an action
+   - Actions go one at a time, so this ensures single threading
+3. Only pure functions (dispatch actions to) change state
+   - Pure functions are known as "reducers".
+     - They take
+       - Previous state
+       - Action
+     - They return
+       - New state

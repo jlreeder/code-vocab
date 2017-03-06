@@ -1,0 +1,14 @@
+#+TITLE: Flux
+* Meta
+- Front-end application framework often used with React
+* Aspects
+** Action
+- Type (required)
+- Payload (optional)
+** Dispatcher
+Connects actions to the store
+** Store
+- Represents the application state
+- Updates the state when it receives an action from the dispatcher
+** View
+- Creates actions (based on user interaction with DOM)
