@@ -20,3 +20,21 @@
 - Has state (props)
 - Has (explicit) render method
 - May have other methods
+* Practical
+** Container components
+- The point is to get info from state to feed to their children. They are the hunters. The lady lions.
+- Contain
+  - mapStateToProps
+  - mapDispatchToProps
+- Export the connection of the two, along with the standard component
+- Any time you need things from state to feed children, containers are necessary
+** Standard components
+- They render things
+- They can take lifecycle methods (like ~componentDidMount~)
+** Item components
+- You can further modularize things by creating smaller components to go in your main components.
+- These will be functional
+- When you're wondering what data can show up in their props, go back to their container component hunter lady lions
+** Forms
+- Editing will almost always have ~hasHistory.push()~
+- Buttons have an ~onClick~

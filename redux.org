@@ -82,3 +82,38 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 #+END_SRC
 ** Run ~npm start~
+* Redux Cycle
+** API Utils
+- Ajax calls needed for action creators
+** Action creators
+*** Flow
+1. Create thunk action creators
+2. These will require regular action creators
+3. These will require exported constants
+*** Thunk
+- exported
+- rely on regular
+**** Note
+- Anything that requires udating will need a ~hashHistory.push()~ ie a redirect
+*** Regular
+- type IN_ALL_CAPS
+- data
+** Reducers
+*** General
+- They change the state of the application
+- To have more modular code, write multiple reducers and combine them in a 'root reducer', whose sole job is to join reducers. This is necessary because the store can only take one reducer.
+- They have a switch statement
+- don't forget that the actions in each case depend on what is send by the action creator
+- And easy approach
+  - Set the default first
+  - Set the object to initialize to
+*** Remember that
+- receiving all replaces the state
+- receiving new joins with the old state
+- deleting requires copying the state than deleting from it
+** Store
+- Create the store from
+  - Root reducer
+  - Preloaded state
+  - Middleware
+  - Mnemonic: a store is a middleman loaded with roots
